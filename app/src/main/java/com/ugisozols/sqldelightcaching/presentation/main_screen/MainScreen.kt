@@ -23,7 +23,7 @@ import androidx.compose.ui.window.Dialog
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.ugisozols.sqldelightcaching.utilities.SynchronizationEventHandler
 import com.ugisozols.sqldelightcachingmechanism.presentation.main_screen.MainScreenViewModel
-import com.ugisozols.sqldelightcachingmechanism.util.DataResource
+import com.ugisozols.sqldelightcaching.utilities.DataResource
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import personsdatabase.personsdb.Persons
 

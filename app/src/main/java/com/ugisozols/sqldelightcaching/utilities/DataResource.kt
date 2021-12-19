@@ -1,4 +1,4 @@
-package com.ugisozols.sqldelightcachingmechanism.util
+package com.ugisozols.sqldelightcaching.utilities
 
 sealed class DataResource<T>(val data : T?, val message : String? = null) {
     class Success<T>(data: T?) : DataResource<T>(data)

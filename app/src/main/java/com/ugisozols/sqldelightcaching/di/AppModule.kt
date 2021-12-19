@@ -19,6 +19,18 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
+    @Provides
+    @Singleton
+    fun providePersonsApi(): PersonsApi{
+        val client = OkHttpClient.Builder()
+            .build()
+        return Retrofit.Builder()
+            .baseUrl(PersonsApi.BASE_URL)
+            .client(client)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(PersonsApi::class.java)
+    }
 
     @Provides
     @Singleton
@@ -34,19 +46,6 @@ object AppModule {
     @Singleton
     fun providePersonsDataSource(driver: SqlDriver) : PersonsDataSource{
         return  PersonsDataSourceImpl(PersonsDatabase(driver))
-    }
-
-    @Provides
-    @Singleton
-    fun providePersonsApi(): PersonsApi{
-        val client = OkHttpClient.Builder()
-            .build()
-        return Retrofit.Builder()
-            .baseUrl(PersonsApi.BASE_URL)
-            .client(client)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(PersonsApi::class.java)
     }
 
 }

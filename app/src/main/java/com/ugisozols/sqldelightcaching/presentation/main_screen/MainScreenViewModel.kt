@@ -2,13 +2,12 @@ package com.ugisozols.sqldelightcachingmechanism.presentation.main_screen
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ugisozols.sqldelightcaching.domain.repository.PersonsRepository
 import com.ugisozols.sqldelightcaching.utilities.SynchronizationEventHandler
-import com.ugisozols.sqldelightcachingmechanism.util.DataResource
+import com.ugisozols.sqldelightcaching.utilities.DataResource
 
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi

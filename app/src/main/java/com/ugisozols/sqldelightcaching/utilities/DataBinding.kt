@@ -1,6 +1,5 @@
 package com.ugisozols.sqldelightcaching.utilities
 
-import com.ugisozols.sqldelightcachingmechanism.util.DataResource
 import kotlinx.coroutines.flow.*
 
 inline fun <LOCALDATA , REMOTEAPIDATA> dataBinding(

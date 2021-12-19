@@ -1,13 +1,12 @@
 package com.ugisozols.sqldelightcaching.domain.repository
 
 import android.app.Application
-import android.content.Context
 import com.ugisozols.sqldelightcaching.data.local.PersonsDataSource
 import com.ugisozols.sqldelightcaching.data.remote.PersonsApi
 import com.ugisozols.sqldelightcaching.data.remote.request.DeletePerson
 import com.ugisozols.sqldelightcaching.utilities.checkInternetConnectivity
 import com.ugisozols.sqldelightcaching.utilities.dataBinding
-import com.ugisozols.sqldelightcachingmechanism.util.DataResource
+import com.ugisozols.sqldelightcaching.utilities.DataResource
 import kotlinx.coroutines.flow.Flow
 import personsdatabase.personsdb.Persons
 import retrofit2.Response
