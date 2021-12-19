@@ -1,0 +1,15 @@
+CREATE TABLE DeletedPersonsIdsDB (
+localyDeletedId TEXT
+);
+
+
+getAllIds:
+SELECT * FROM DeletedPersonsIdsDB;
+
+deleteDeletedIds:
+DELETE FROM DeletedPersonsIdsDB
+WHERE localyDeletedId =?;
+
+insertDeletedFriendsId:
+INSERT OR REPLACE INTO DeletedPersonsIdsDB
+VALUES (?);

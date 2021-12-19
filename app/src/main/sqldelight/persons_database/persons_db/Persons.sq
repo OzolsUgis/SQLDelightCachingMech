@@ -1,0 +1,35 @@
+CREATE TABLE Persons (
+firstName TEXT NOT NULL,
+lastName TEXT NOT NULL,
+phoneNumber TEXT DEFAULT "",
+isSynced INTEGER AS Boolean NOT NULL,
+id TEXT NOT NULL UNIQUE PRIMARY KEY
+);
+
+getPersonsById:
+SELECT *
+FROM Persons
+WHERE id = :id;
+
+addPerson:
+INSERT OR REPLACE
+INTO Persons
+VALUES (?,?,?,0,?);
+
+deletePerson:
+DELETE FROM Persons
+WHERE id = :id;
+
+getAllPersons:
+SELECT * FROM Persons;
+
+updatePerson:
+UPDATE Persons
+SET isSynced = 1 WHERE id =?;
+
+getAllUnsyncedPersons:
+SELECT * FROM Persons
+WHERE isSynced = 0;
+
+deleteAllPersons:
+DELETE FROM Persons;

@@ -84,3 +84,9 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
 }
+
+sqldelight{
+    PersonsDatabase{
+        packageName = "com.ugisozols.sqldelightpersons"
+    }
+}
