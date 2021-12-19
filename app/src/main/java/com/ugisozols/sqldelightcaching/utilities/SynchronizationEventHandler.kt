@@ -1,6 +1,6 @@
 package com.ugisozols.sqldelightcaching.utilities
 
-open class SynchronizedEventHandler<T>(private val content: T) {
+open class SynchronizationEventHandler<T>(private val content: T) {
     var hasBeenSynchronized = false
         private set
 
