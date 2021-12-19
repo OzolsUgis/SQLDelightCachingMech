@@ -11,17 +11,17 @@ import retrofit2.http.POST
 
 interface PersonsApi {
     @POST("/person/add")
-    suspend fun insertFriend(
+    suspend fun insertPerson(
         @Body person : Persons
     ) : Response<MainResponse>
 
     @POST("/person/delete")
-    suspend fun deleteFriend(
+    suspend fun deletePerson(
         @Body deleteRequest: DeletePerson
     ): Response<ResponseBody>
 
     @GET("/person/getPersons")
-    suspend fun getFriends() : Response<List<Persons>>
+    suspend fun getPersons() : Response<List<Persons>>
 
     companion object{
         // This is url for testing on Android Emulator
