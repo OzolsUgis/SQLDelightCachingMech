@@ -1,5 +1,5 @@
 CREATE TABLE DeletedPersonsIdsDB (
-localyDeletedId TEXT
+locallyDeletedId TEXT
 );
 
 
@@ -8,7 +8,7 @@ SELECT * FROM DeletedPersonsIdsDB;
 
 deleteDeletedIds:
 DELETE FROM DeletedPersonsIdsDB
-WHERE localyDeletedId =?;
+WHERE locallyDeletedId =?;
 
 insertDeletedFriendsId:
 INSERT OR REPLACE INTO DeletedPersonsIdsDB
