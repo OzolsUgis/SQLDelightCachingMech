@@ -29,6 +29,8 @@ Application displays list of persons fetched from remote and local database. App
 add/delete Persons in online & offline mode. When added/deleted while offline values gets cached into local
 database and after application restart if device is online values are added/ deleted in server. 
 
+### Built With 
+
 This application is built in  [Android Studio version 2020.3.1 (Artic Fox)](https://developer.android.com/studio?gclid=CjwKCAjwgb6IBhAREiwAgMYKRlU8WsxaTu6kg3JANeH6rEr8MrWyit5JaDfcTy0v1tTP0-DOmL1QnRoCxrcQAvD_BwE&gclsrc=aw.ds) 
 using :
 
