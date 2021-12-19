@@ -1,4 +1,4 @@
-package com.ugisozols.sqldelightcaching.ui.theme
+package com.ugisozols.sqldelightcaching.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

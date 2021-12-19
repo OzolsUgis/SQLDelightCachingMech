@@ -1,4 +1,4 @@
-package com.ugisozols.sqldelightcaching.ui.theme
+package com.ugisozols.sqldelightcaching.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

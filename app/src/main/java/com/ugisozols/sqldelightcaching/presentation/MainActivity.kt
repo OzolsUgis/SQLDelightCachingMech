@@ -1,4 +1,4 @@
-package com.ugisozols.sqldelightcaching
+package com.ugisozols.sqldelightcaching.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,8 +8,11 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.ugisozols.sqldelightcaching.ui.theme.SQLDelightCachingTheme
+import com.ugisozols.sqldelightcaching.presentation.ui.theme.SQLDelightCachingTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
