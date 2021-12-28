@@ -76,10 +76,11 @@ this Id gets deleted from remote database.
 
    ## Contacts
 
-     Ugis Ozols - ugisozols.97@gmail.com , LinkedIn - www.linkedin.com/in/ozols-ugis
+   Ugis Ozols - ozols.ugis@outlook.com
+   
+   LinkedIn - www.linkedin.com/in/ozols-ugis
 
-
-     Project Link - https://github.com/OzolsUgis/SQLDelightCachingMech
+   Project Link - https://github.com/OzolsUgis/SQLDelightCachingMech
 
       
 
